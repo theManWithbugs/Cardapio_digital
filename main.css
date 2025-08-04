@@ -1,0 +1,30 @@
+body {
+    background-image: url("img_royalty_fundo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.full-height-center {
+    min-height: calc(100vh - 90px); 
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row.gap-2 {
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 12rem;
+}
+
+
+
