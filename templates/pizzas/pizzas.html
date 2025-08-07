@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+       <link rel="stylesheet" href="/css/main.css">
+       <link rel="stylesheet" href="/css/button_home.css">
+       <title>title</title>
+   </head>
+   <body>
+        <div id="navbar"></div>
+
+        <div class="full-height-center">
+           <div class="container">
+               <div class="row text-center gap-2">
+                   <div class="col-auto">
+                       <div class="card" style="width: 18rem;">
+                           <img src="/img/pizza_gg.png" class="card-img-top" alt="...">
+                           <div class="card-body">
+                               <h5 class="card-title">Pizza GG</h5>
+                                <p class="card-text"> Pizza GG (Grande Grande)
+                                Tamanho: Extra grande<br>
+                                Pedaços: 12</p>
+
+                                <a href="sabores/selecionar_sabor.html" style="text-decoration: none; color: white;">
+                                    <button class="cssbuttons-io-button d-flex ms-5">
+                                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+                                        </svg>
+                                        <span onclick="add_produto('pizza_gg')">Sabores</span>
+                                    </button>
+                                </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-auto">
+                       <div class="card" style="width: 18rem;">
+                           <img src="/img/pizza_g.png" class="card-img-top" alt="...">
+                           <div class="card-body">
+                               <h5 class="card-title">Pizza G</h5>
+                               <p class="card-text">
+                                    Pizza G (Grande) <br>
+                                    Tamanho: Grande <br>
+                                    Pedaços: 8
+                                </p>
+                               <button class="cssbuttons-io-button text-center ms-5">
+                                   <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M0 0h24v24H0z" fill="none"></path>
+                                       <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+                                   </svg>
+                                   <span onclick="add_produto('pizza_g')">Sabores</span>
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+                    <div class="col-auto">
+                       <div class="card" style="width: 18rem;">
+                           <img src="/img/pizza_m.png" class="card-img-top" alt="...">
+                           <div class="card-body">
+                               <h5 class="card-title">Pizza M</h5>
+                               <p class="card-text">
+                                    Pizza M (Grande) <br>
+                                    Tamanho: Media <br>
+                                    Pedaços: 6
+                                </p>
+                               <button class="cssbuttons-io-button text-center ms-5">
+                                   <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M0 0h24v24H0z" fill="none"></path>
+                                       <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+                                   </svg>
+                                   <span onclick="add_produto('pizza_m')">Sabores</span>
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-auto">
+                       <div class="card" style="width: 18rem;">
+                           <img src="/img/pizza_p.png" class="card-img-top" alt="...">
+                           <div class="card-body">
+                               <h5 class="card-title">Pizza P</h5>
+                               <p class="card-text">
+                                Pizza P (Pequena) <br>
+                                Tamanho: Pequena  <br>
+                                Pedaços: 4
+                                </p>
+                               <button class="cssbuttons-io-button text-center ms-5">
+                                   <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M0 0h24v24H0z" fill="none"></path>
+                                       <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+                                   </svg>
+                                   <span onclick="add_produto('pizza_p')">Sabores</span>
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </body>
+   <script src="/js/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</html>
