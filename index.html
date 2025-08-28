@@ -3,8 +3,7 @@
    <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
-       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+       <link rel="stylesheet" href="/css/bootstrap.min.css">
        <link rel="stylesheet" href="css/main.css">
        <link rel="stylesheet" href="css/button_home.css">
        <title>Royal</title>
@@ -17,11 +16,11 @@
             <div class="container">
                 <div class="row text-center gap-2">
                     <div class="col-auto">
-                       <div class="card" style="width: 18rem;">
+                       <div class="card bg-transparent text-white" style="width: 18rem; backdrop-filter: blur(50px);">
                            <img src="img/pizzas_img.png" class="card-img-top" alt="...">
                            <div class="card-body">
                                <h5 class="card-title">Pizzas disponiveis</h5>
-                                <p class="card-text mb-4"> 
+                                <p class="card-text mb-4">
                                 Pizza tamanhos(GG, G, M, P)
                                 Diferentes valores e sabores</p>
                                <button class="cssbuttons-io-button d-flex ms-5">
@@ -37,11 +36,11 @@
                        </div>
                    </div>
                    <div class="col-auto">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card bg-transparent text-white" style="width: 18rem; backdrop-filter: blur(50px);">
                            <img src="img/esfihas_img.png" class="card-img-top" alt="...">
                            <div class="card-body">
                                <h5 class="card-title">Esfihas Combos + individuais</h5>
-                                <p class="card-text mb-4"> 
+                                <p class="card-text mb-4">
                                 Combos: (Casal, Familia, Royal)
                                 </p>
                                <button class="cssbuttons-io-button d-flex ms-5">
@@ -49,17 +48,19 @@
                                        <path d="M0 0h24v24H0z" fill="none"></path>
                                        <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
                                    </svg>
-                                   <span>Visualizar</span>
+                                   <a style="text-decoration: none;" onclick="not_found_alert()">
+                                        <span>Visualizar</span>
+                                   </a>
                                </button>
                            </div>
                        </div>
                    </div>
                    <div class="col-auto">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card bg-transparent text-white" style="width: 18rem; backdrop-filter: blur(50px);">
                            <img src="img/refrigerantes_img.png" class="card-img-top" alt="...">
                            <div class="card-body">
                                <h5 class="card-title">Bebidas</h5>
-                                <p class="card-text mb-4"> 
+                                <p class="card-text mb-4">
                                 Refrigerantes, sucos, outros...
                                 </p>
                                <button class="cssbuttons-io-button d-flex ms-5">
@@ -67,7 +68,9 @@
                                        <path d="M0 0h24v24H0z" fill="none"></path>
                                        <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
                                    </svg>
-                                   <span>Visualizar</span>
+                                   <a href="templates/refrigerantes/refrigerantes.html" style="text-decoration: none;">
+                                    <span class="text-white">Visualizar</span>
+                                   </a>
                                </button>
                            </div>
                        </div>
@@ -78,7 +81,7 @@
        <br><br>
 
        <script src="js/main.js"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
-       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+       <script src="/js/bootstrap.bundle.min.js"></script>
+       <script src="/js/sweetalert2@11.js"></script>
    </body>
 </html>

@@ -4,7 +4,7 @@ fetch('/navbar.html')
         document.getElementById('navbar').innerHTML = data;
     })
 
-
+let sabores = [];
 let carrinho = []
 let total = 0
 let contador = 0;
@@ -41,7 +41,7 @@ function add_produto(nome) {
     //Variavel
     // let nome = "Wilian";
     // localStorage.setItem("nomeUsuario", nome);
-    
+
     // Array ou objeto
     // let config = { tema: "escuro", fonte: "Arial" };
     // localStorage.setItem("configuracoes", JSON.stringify(config));
@@ -58,15 +58,13 @@ function add_produto(nome) {
 
 let carrinho_atual = JSON.parse(localStorage.getItem("carrinho_atual"));
 
-function add_dec_sabores() {
-    max = carrinho_atual[0]["sabores"];
+// box_sabores = document.getElementById('sabores_selec');
 
-    if (contador < max) {
-        contador += 1;
-    }
+// sabor_1 = document.createElement('p');
+// sabor_1.innerHTML = sabores[0];
 
-    console.log(contador);
-}
+// box_sabores.appendChild(sabor_1);
+
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log(carrinho_atual);
@@ -110,7 +108,7 @@ function enviar_dados(event) {
 // function incrementar() {
 //     if (contador < max) {
 //         contador += 1;
-//     } 
+//     }
 //     console.log("Contador:", contador);
 //     return contador
 // }
@@ -118,7 +116,15 @@ function enviar_dados(event) {
 // function decrementar() {
 //     if (contador > 0) {
 //         contador -= 1;
-//     } 
+//     }
 //     console.log("Contador:", contador);
 //     return contador
 // }
+
+function not_found_alert() {
+    Swal.fire({
+    imageUrl: "img/n_disponivel_img.png",
+    imageHeight: 500,
+    imageAlt: "A tall image",
+    });
+};
